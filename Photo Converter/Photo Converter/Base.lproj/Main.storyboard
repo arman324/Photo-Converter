@@ -83,8 +83,8 @@
                         </subviews>
                         <color key="backgroundColor" red="0.015686274509803921" green="0.015686274509803921" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Lai-H5-1oO" firstAttribute="centerY" secondItem="GkX-Vc-Zdr" secondAttribute="centerY" constant="-386" id="FRV-oz-8KO"/>
-                            <constraint firstItem="Lai-H5-1oO" firstAttribute="centerX" secondItem="GkX-Vc-Zdr" secondAttribute="centerX" constant="-154" id="SS2-9Y-WBc"/>
+                            <constraint firstItem="Lai-H5-1oO" firstAttribute="top" secondItem="GkX-Vc-Zdr" secondAttribute="top" constant="30.5" id="0t2-AD-o8L"/>
+                            <constraint firstItem="Lai-H5-1oO" firstAttribute="leading" secondItem="GkX-Vc-Zdr" secondAttribute="leading" constant="31.5" id="rtW-5R-5lk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jOE-1H-7bk"/>
                     </view>
