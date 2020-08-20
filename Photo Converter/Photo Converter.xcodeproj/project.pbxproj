@@ -12,6 +12,8 @@
 		C20C611524EEEE8F00456B90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C20C611324EEEE8F00456B90 /* Main.storyboard */; };
 		C20C611724EEEE8F00456B90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C20C611624EEEE8F00456B90 /* Assets.xcassets */; };
 		C20C611A24EEEE8F00456B90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C20C611824EEEE8F00456B90 /* LaunchScreen.storyboard */; };
+		C20C612624EEFCC200456B90 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20C612524EEFCC200456B90 /* MainViewController.swift */; };
+		C20C612824EEFCD300456B90 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20C612724EEFCD300456B90 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		C20C611624EEEE8F00456B90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C20C611924EEEE8F00456B90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C20C611B24EEEE8F00456B90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C20C612524EEFCC200456B90 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C20C612724EEFCD300456B90 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				C20C611624EEEE8F00456B90 /* Assets.xcassets */,
 				C20C611824EEEE8F00456B90 /* LaunchScreen.storyboard */,
 				C20C611B24EEEE8F00456B90 /* Info.plist */,
+				C20C612524EEFCC200456B90 /* MainViewController.swift */,
+				C20C612724EEFCD300456B90 /* SecondViewController.swift */,
 			);
 			path = "Photo Converter";
 			sourceTree = "<group>";
@@ -135,6 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C20C612824EEFCD300456B90 /* SecondViewController.swift in Sources */,
+				C20C612624EEFCC200456B90 /* MainViewController.swift in Sources */,
 				C20C611224EEEE8F00456B90 /* ViewController.swift in Sources */,
 				C20C611024EEEE8F00456B90 /* AppDelegate.swift in Sources */,
 			);
