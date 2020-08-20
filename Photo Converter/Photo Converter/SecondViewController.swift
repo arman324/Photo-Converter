@@ -8,15 +8,36 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
       //  title = "Second Screen"
-
+       OpenPhoto()
     }
     
+    @IBAction func openPhotos(_ sender: Any) {
+        OpenPhoto()
 
+    }
+    func OpenPhoto (){
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        
+        imagePickerController.sourceType = .photoLibrary
+        self.present(imagePickerController, animated: true, completion: nil)
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
+        imageView.image = image
+        
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
 }
