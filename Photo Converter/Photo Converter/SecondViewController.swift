@@ -9,11 +9,12 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    
+    @IBOutlet var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       // title = "Second Screen"
+      //  title = "Second Screen"
 
     }
     
