@@ -23,12 +23,4 @@ class MainViewController: UIViewController {
         }
     
 
-    @IBAction func openCamera(_ sender: Any) {
-        //let imagePickerController = UIImagePickerController()
-        //imagePickerController.sourceType = .camera
-        //self.present(imagePickerController, animated: true, completion: nil)
-    }
-    
-
-
 }

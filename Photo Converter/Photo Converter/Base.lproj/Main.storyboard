@@ -19,8 +19,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxm-QZ-UUA">
-                                <rect key="frame" x="100" y="359" width="214" height="78"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
+                                <rect key="frame" x="89" y="407" width="236" height="82"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="25"/>
                                 <inset key="contentEdgeInsets" minX="25" minY="25" maxX="25" maxY="25"/>
                                 <state key="normal" title="OPEN PHOTOS">
                                     <color key="titleColor" red="0.94168835878372192" green="0.62581747770309448" blue="0.12920007109642029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -30,24 +30,11 @@
                                     <segue destination="p3o-q7-AIe" kind="show" id="k94-Wf-zgn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPQ-6A-1Ox">
-                                <rect key="frame" x="130.5" y="459" width="153" height="78"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
-                                <inset key="contentEdgeInsets" minX="25" minY="25" maxX="25" maxY="25"/>
-                                <state key="normal" title="CAMERA">
-                                    <color key="titleColor" red="0.94168835878372192" green="0.62581747770309448" blue="0.12920007109642029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="openCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Miq-Be-mwS"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.017278887331485748" green="0.013204357586801052" blue="0.10346376150846481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="cxm-QZ-UUA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="2vF-cj-Uab"/>
-                            <constraint firstItem="YPQ-6A-1Ox" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="50" id="gUa-Hz-yr3"/>
-                            <constraint firstItem="cxm-QZ-UUA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iTL-hY-eA2"/>
-                            <constraint firstItem="YPQ-6A-1Ox" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rlg-ql-a8T"/>
+                            <constraint firstItem="cxm-QZ-UUA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GbV-qK-mTF"/>
+                            <constraint firstItem="cxm-QZ-UUA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="apy-JC-PPK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -66,25 +53,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lai-H5-1oO">
-                                <rect key="frame" x="31.5" y="30.5" width="147" height="42"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
-                                <state key="normal" title="OPEN PHOTOS">
+                                <rect key="frame" x="20" y="44" width="104" height="44"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="19"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="17" maxY="10"/>
+                                <state key="normal" title="PHOTOS">
                                     <color key="titleColor" red="0.94168835878372192" green="0.62581747770309448" blue="0.12920007109642029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="openPhotos:" destination="p3o-q7-AIe" eventType="touchUpInside" id="eFa-6y-Wcu"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gP2-cL-diC">
-                                <rect key="frame" x="0.0" y="101" width="414" height="705"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gP2-cL-diC">
+                                <rect key="frame" x="0.0" y="96" width="414" height="738"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TpS-Om-5RU">
+                                <rect key="frame" x="315" y="44" width="79" height="44"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="19"/>
+                                <inset key="contentEdgeInsets" minX="17" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" title="SAVE">
+                                    <color key="titleColor" red="0.94168835878372192" green="0.62581747770309448" blue="0.12920007109642029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="savePhotos:" destination="p3o-q7-AIe" eventType="touchUpInside" id="EUL-Gw-0Q0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.015686274509803921" green="0.015686274509803921" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Lai-H5-1oO" firstAttribute="top" secondItem="GkX-Vc-Zdr" secondAttribute="top" constant="30.5" id="0t2-AD-o8L"/>
-                            <constraint firstItem="Lai-H5-1oO" firstAttribute="leading" secondItem="GkX-Vc-Zdr" secondAttribute="leading" constant="31.5" id="rtW-5R-5lk"/>
+                            <constraint firstItem="TpS-Om-5RU" firstAttribute="top" secondItem="jOE-1H-7bk" secondAttribute="top" id="Drn-ae-JAH"/>
+                            <constraint firstItem="TpS-Om-5RU" firstAttribute="trailing" secondItem="GkX-Vc-Zdr" secondAttribute="trailingMargin" id="I55-5e-Ee5"/>
+                            <constraint firstItem="gP2-cL-diC" firstAttribute="top" secondItem="Lai-H5-1oO" secondAttribute="bottom" constant="8" id="P2c-03-nt7"/>
+                            <constraint firstItem="gP2-cL-diC" firstAttribute="trailing" secondItem="jOE-1H-7bk" secondAttribute="trailing" id="VAu-78-Svn"/>
+                            <constraint firstItem="gP2-cL-diC" firstAttribute="leading" secondItem="jOE-1H-7bk" secondAttribute="leading" id="Wde-Z8-sbv"/>
+                            <constraint firstItem="Lai-H5-1oO" firstAttribute="top" secondItem="GkX-Vc-Zdr" secondAttribute="topMargin" id="ZIk-0v-7a2"/>
+                            <constraint firstAttribute="bottom" secondItem="gP2-cL-diC" secondAttribute="bottom" constant="62" id="fx7-iI-ZdS"/>
+                            <constraint firstItem="gP2-cL-diC" firstAttribute="top" secondItem="TpS-Om-5RU" secondAttribute="bottom" constant="8" id="x67-oX-Snn"/>
+                            <constraint firstItem="Lai-H5-1oO" firstAttribute="leading" secondItem="GkX-Vc-Zdr" secondAttribute="leadingMargin" id="z59-Dd-lcS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jOE-1H-7bk"/>
                     </view>
