@@ -11,6 +11,8 @@ import UIKit
 class SecondViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     var image: UIImage? = nil
+    var ConvertedImage: UIImage? = nil
+    var boolForForwardButton = 0
 
     @IBOutlet var imageView: UIImageView!
     override func viewDidLoad() {
@@ -22,7 +24,7 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     @IBAction func openPhotos(_ sender: Any) {
         OpenPhoto()
-
+        boolForForwardButton = 0
     }
     
     
@@ -39,8 +41,22 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate, U
    
     
     @IBAction func convertPhoto(_ sender: Any) {
-        imageView.image = grayscale(image: image!)
+        ConvertedImage = grayscale(image: image!)
+        imageView.image = ConvertedImage
+        boolForForwardButton = 1
+        }
+
+    @IBAction func BackButton(_ sender: Any) {
+        imageView.image = image
     }
+    
+    
+    @IBAction func ForwardButton(_ sender: Any) {
+        if boolForForwardButton == 1 {
+            imageView.image = ConvertedImage
+        }
+    }
+    
     
     func grayscale(image: UIImage) -> UIImage? {
         let context = CIContext(options: nil)

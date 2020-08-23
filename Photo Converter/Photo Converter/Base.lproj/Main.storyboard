@@ -88,6 +88,28 @@
                                     <action selector="convertPhoto:" destination="p3o-q7-AIe" eventType="touchUpInside" id="2O3-MS-k0D"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whx-FG-M6N">
+                                <rect key="frame" x="154.5" y="49" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="YXu-47-9oo"/>
+                                    <constraint firstAttribute="height" constant="35" id="cRC-Bn-bZA"/>
+                                </constraints>
+                                <state key="normal" title="Back" image="Back"/>
+                                <connections>
+                                    <action selector="BackButton:" destination="p3o-q7-AIe" eventType="touchUpInside" id="F0o-kx-k8l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFa-dR-jlI">
+                                <rect key="frame" x="224.5" y="49" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Vxu-sk-Xa6"/>
+                                    <constraint firstAttribute="width" constant="35" id="laF-MX-mq0"/>
+                                </constraints>
+                                <state key="normal" title="Forward" image="Forward"/>
+                                <connections>
+                                    <action selector="ForwardButton:" destination="p3o-q7-AIe" eventType="touchUpInside" id="7KF-Wk-n0W"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.015686274509803921" green="0.015686274509803921" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -95,12 +117,16 @@
                             <constraint firstItem="ZYn-Cw-Pzl" firstAttribute="centerX" secondItem="GkX-Vc-Zdr" secondAttribute="centerX" id="A3u-rJ-XmT"/>
                             <constraint firstItem="TpS-Om-5RU" firstAttribute="top" secondItem="jOE-1H-7bk" secondAttribute="top" id="Drn-ae-JAH"/>
                             <constraint firstItem="TpS-Om-5RU" firstAttribute="trailing" secondItem="GkX-Vc-Zdr" secondAttribute="trailingMargin" id="I55-5e-Ee5"/>
+                            <constraint firstItem="whx-FG-M6N" firstAttribute="centerX" secondItem="GkX-Vc-Zdr" secondAttribute="centerX" constant="-35" id="N10-HM-5uW"/>
                             <constraint firstItem="gP2-cL-diC" firstAttribute="top" secondItem="Lai-H5-1oO" secondAttribute="bottom" constant="8" id="P2c-03-nt7"/>
+                            <constraint firstItem="EFa-dR-jlI" firstAttribute="top" secondItem="jOE-1H-7bk" secondAttribute="top" constant="5" id="Svx-YF-mS1"/>
                             <constraint firstItem="gP2-cL-diC" firstAttribute="trailing" secondItem="jOE-1H-7bk" secondAttribute="trailing" id="VAu-78-Svn"/>
                             <constraint firstItem="gP2-cL-diC" firstAttribute="leading" secondItem="jOE-1H-7bk" secondAttribute="leading" id="Wde-Z8-sbv"/>
                             <constraint firstItem="Lai-H5-1oO" firstAttribute="top" secondItem="GkX-Vc-Zdr" secondAttribute="topMargin" id="ZIk-0v-7a2"/>
                             <constraint firstAttribute="bottom" secondItem="gP2-cL-diC" secondAttribute="bottom" constant="83" id="fx7-iI-ZdS"/>
+                            <constraint firstItem="EFa-dR-jlI" firstAttribute="centerX" secondItem="GkX-Vc-Zdr" secondAttribute="centerX" constant="35" id="jGB-iZ-A6o"/>
                             <constraint firstItem="ZYn-Cw-Pzl" firstAttribute="bottom" secondItem="jOE-1H-7bk" secondAttribute="bottom" id="kdH-zJ-Yi9"/>
+                            <constraint firstItem="whx-FG-M6N" firstAttribute="top" secondItem="jOE-1H-7bk" secondAttribute="top" constant="5" id="kpm-5t-KwZ"/>
                             <constraint firstItem="gP2-cL-diC" firstAttribute="top" secondItem="TpS-Om-5RU" secondAttribute="bottom" constant="8" id="x67-oX-Snn"/>
                             <constraint firstItem="Lai-H5-1oO" firstAttribute="leading" secondItem="GkX-Vc-Zdr" secondAttribute="leadingMargin" id="z59-Dd-lcS"/>
                         </constraints>
@@ -137,4 +163,8 @@
             <point key="canvasLocation" x="-74" y="21"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Back" width="512" height="512"/>
+        <image name="Forward" width="512" height="512"/>
+    </resources>
 </document>
