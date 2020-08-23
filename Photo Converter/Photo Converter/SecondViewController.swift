@@ -41,9 +41,10 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate, U
    
     
     @IBAction func convertPhoto(_ sender: Any) {
-        ConvertedImage = grayscale(image: image!)
+        ConvertedImage = addEffect(image: image!, name:"CIPhotoEffectChrome")
         imageView.image = ConvertedImage
         boolForForwardButton = 1
+
         }
 
     @IBAction func BackButton(_ sender: Any) {
@@ -58,9 +59,25 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate, U
     }
     
     
-    func grayscale(image: UIImage) -> UIImage? {
+    @IBAction func blurButton(_ sender: Any) {
+        
+        ConvertedImage = addEffect(image: image!, name:"CIMotionBlur")
+        imageView.image = ConvertedImage
+        boolForForwardButton = 1
+
+    }
+    
+    
+    @IBAction func grayButton(_ sender: Any) {
+        ConvertedImage = addEffect(image: image!, name:"CIPhotoEffectNoir")
+        imageView.image = ConvertedImage
+        boolForForwardButton = 1
+    }
+    
+    
+    func addEffect(image: UIImage, name: String) -> UIImage? {
         let context = CIContext(options: nil)
-        if let filter = CIFilter(name: "CIPhotoEffectNoir") {
+        if let filter = CIFilter(name: name) {
             filter.setValue(CIImage(image: image), forKey: kCIInputImageKey)
             
             if let output = filter.outputImage {

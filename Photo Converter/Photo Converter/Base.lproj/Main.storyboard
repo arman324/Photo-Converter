@@ -81,7 +81,7 @@
                                 <rect key="frame" x="139.5" y="823" width="135" height="39"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="21"/>
                                 <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
-                                <state key="normal" title="Convert">
+                                <state key="normal" title="CHROME">
                                     <color key="titleColor" red="0.94168835878372192" green="0.62581747770309448" blue="0.12920007109642029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -110,15 +110,43 @@
                                     <action selector="ForwardButton:" destination="p3o-q7-AIe" eventType="touchUpInside" id="7KF-Wk-n0W"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyL-PD-OwU">
+                                <rect key="frame" x="20" y="823" width="89" height="39"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="21"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="20" maxY="10"/>
+                                <state key="normal" title="BLUR">
+                                    <color key="titleColor" red="0.94168835878372192" green="0.62581747770309448" blue="0.12920007109642029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="blurButton:" destination="p3o-q7-AIe" eventType="touchUpInside" id="im7-el-11m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7V8-fZ-AuR">
+                                <rect key="frame" x="291" y="823" width="103" height="39"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="21"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" title="GRAY">
+                                    <color key="titleColor" red="0.94168835878372192" green="0.62581747770309448" blue="0.12920007109642029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="grayButton:" destination="p3o-q7-AIe" eventType="touchUpInside" id="ooe-WW-ABf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.015686274509803921" green="0.015686274509803921" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="7V8-fZ-AuR" firstAttribute="bottom" secondItem="jOE-1H-7bk" secondAttribute="bottom" id="0cM-c2-hbt"/>
                             <constraint firstItem="ZYn-Cw-Pzl" firstAttribute="top" secondItem="gP2-cL-diC" secondAttribute="bottom" constant="10" id="20G-Wj-ji0"/>
+                            <constraint firstItem="7V8-fZ-AuR" firstAttribute="trailing" secondItem="GkX-Vc-Zdr" secondAttribute="trailingMargin" id="7RO-RP-SwM"/>
                             <constraint firstItem="ZYn-Cw-Pzl" firstAttribute="centerX" secondItem="GkX-Vc-Zdr" secondAttribute="centerX" id="A3u-rJ-XmT"/>
                             <constraint firstItem="TpS-Om-5RU" firstAttribute="top" secondItem="jOE-1H-7bk" secondAttribute="top" id="Drn-ae-JAH"/>
+                            <constraint firstItem="cyL-PD-OwU" firstAttribute="leading" secondItem="GkX-Vc-Zdr" secondAttribute="leadingMargin" id="GSb-a7-UMl"/>
                             <constraint firstItem="TpS-Om-5RU" firstAttribute="trailing" secondItem="GkX-Vc-Zdr" secondAttribute="trailingMargin" id="I55-5e-Ee5"/>
+                            <constraint firstItem="cyL-PD-OwU" firstAttribute="top" secondItem="gP2-cL-diC" secondAttribute="bottom" constant="10" id="J9X-wG-S6I"/>
+                            <constraint firstItem="cyL-PD-OwU" firstAttribute="bottom" secondItem="jOE-1H-7bk" secondAttribute="bottom" id="Myn-IN-22a"/>
                             <constraint firstItem="whx-FG-M6N" firstAttribute="centerX" secondItem="GkX-Vc-Zdr" secondAttribute="centerX" constant="-35" id="N10-HM-5uW"/>
                             <constraint firstItem="gP2-cL-diC" firstAttribute="top" secondItem="Lai-H5-1oO" secondAttribute="bottom" constant="8" id="P2c-03-nt7"/>
+                            <constraint firstItem="7V8-fZ-AuR" firstAttribute="top" secondItem="gP2-cL-diC" secondAttribute="bottom" constant="10" id="PXO-ed-hEC"/>
                             <constraint firstItem="EFa-dR-jlI" firstAttribute="top" secondItem="jOE-1H-7bk" secondAttribute="top" constant="5" id="Svx-YF-mS1"/>
                             <constraint firstItem="gP2-cL-diC" firstAttribute="trailing" secondItem="jOE-1H-7bk" secondAttribute="trailing" id="VAu-78-Svn"/>
                             <constraint firstItem="gP2-cL-diC" firstAttribute="leading" secondItem="jOE-1H-7bk" secondAttribute="leading" id="Wde-Z8-sbv"/>
