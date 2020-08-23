@@ -9,7 +9,9 @@
 import UIKit
 
 class SecondViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    
+
+    var image: UIImage? = nil
+
     @IBOutlet var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +36,30 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate, U
         alert.addAction(okAction)
         self.present(alert, animated: true, completion: nil)
     }
+   
+    
+    @IBAction func convertPhoto(_ sender: Any) {
+        imageView.image = grayscale(image: image!)
+    }
+    
+    func grayscale(image: UIImage) -> UIImage? {
+        let context = CIContext(options: nil)
+        if let filter = CIFilter(name: "CIPhotoEffectNoir") {
+            filter.setValue(CIImage(image: image), forKey: kCIInputImageKey)
+            
+            if let output = filter.outputImage {
+                if let cgImage = context.createCGImage(output, from: output.extent) {
+                    return UIImage(
+                        cgImage: cgImage,
+                        scale: image.scale,
+                        orientation: image.imageOrientation)
+                }
+            }
+        }
+        return nil
+    }
+    
+    
     
     func OpenPhoto (){
         let imagePickerController = UIImagePickerController()
@@ -43,7 +69,7 @@ class SecondViewController: UIViewController, UIImagePickerControllerDelegate, U
         self.present(imagePickerController, animated: true, completion: nil)
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
+        image = (info[UIImagePickerController.InfoKey.originalImage] as! UIImage)
         imageView.image = image
         
         picker.dismiss(animated: true, completion: nil)
