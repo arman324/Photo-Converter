@@ -8,3 +8,5 @@
 ## Support
 Reach out to me at riasiarman@yahoo.com
 
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/arman324/Photo-Converter/blob/master/LICENSE)
